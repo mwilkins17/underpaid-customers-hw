@@ -69,6 +69,10 @@ from cmath import exp
 MELON_COST = 1.00
 
 def customer_payments(payment_data_filename):
+    """takes each order in a .txt file and
+        checks to see if the customer over or underpaid and by how much"""
+
+    
     with open("customer-orders.txt") as file:
         for line in file:
             line.rstrip(" ")
